@@ -19,7 +19,7 @@ Indici e slicing
 
 Copia di oggetti in Python
 
-Uguaglianza e identita'
+Uguaglianza e identità
 
 
 
