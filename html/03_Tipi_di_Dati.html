@@ -14360,7 +14360,7 @@ a.anchor-link {
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>In molti altri linguaggi di programmazione, come il C o il FORTRAN, gli interi occupano uno spazio fisso di memoria, generalmente 4 bytes, che permette $2^{32}$ differenti valori. Esistono però tipi diversi con dimensioni differenti. Per numeri che rientrano in questi limiti, le operazioni possono essere più veloci, ma è necessario controllare che i numeri non escano dall'intervallo consentito. Utilizzare un numero fuori dai limiti genera un <em>integer overflow</em>, e può portare a risultati sorprendenti.</p>
-<p>Anche in Python, bisogna fare attenzione a questi aspetti quando si usa numpy (see <a href="14-numpy.ipynb">Chapter 14</a>). Numpy usa interi di dimensione fissa, perchè ne immagazzina molti in locazioni consecutive di memoria per poter fare i calcoli in modo efficiente. <a href="http://docs.scipy.org/doc/numpy/user/basics.types.html">Numpy data types</a> include una serie di interi il cui nome riflette le loro dimensioni, così <code>int16</code> è un intero di 16-bit, con $2^{16}$ possibili valori.</p>
+<p>Anche in Python, bisogna fare attenzione a questi aspetti quando si usa numpy (see <a href="07-numpy.ipynb">Chapter 07</a>). Numpy usa interi di dimensione fissa, perchè ne immagazzina molti in locazioni consecutive di memoria per poter fare i calcoli in modo efficiente. <a href="http://docs.scipy.org/doc/numpy/user/basics.types.html">Numpy data types</a> include una serie di interi il cui nome riflette le loro dimensioni, così <code>int16</code> è un intero di 16-bit, con $2^{16}$ possibili valori.</p>
 <p>I tipi interi possono anche essere <em>signed</em> o <em>unsigned</em>. Signed integers permettono valori sia negativi che positivi, mentre quelli unsigned possono essere solo positivi. Per esempio:</p>
 <ul>
 <li>uint16 (unsigned) va da 0 a $2^{16}-1$</li>
@@ -14780,18 +14780,33 @@ a.anchor-link {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Sequenze">Sequenze<a class="anchor-link" href="#Sequenze">&#182;</a></h2><p>Stringhe, liste e ntuple (tuples) sono <em>sequenze</em>. Possono essere <em>indicizzate</em> e <em>sezionate</em> (<em>sliced</em>) nello stesso modo.</p>
 <p>Tuples e stringhe sono “immutable” (fondamentalmente significa che non è possibile cambiare i singoli elementi in una ntupla, e non possiamo modificare i singoli caratteri all'interno di una stringa) mentre le liste sono “mutable” (cioè possiamo cambiare gli elementi di una lista.)</p>
-<p>Le sequenze condividono le operazioni seguenti</p>
+<p>Le sequenze condividono le operazioni seguenti:</p>
 <table>
-<tr><td>`a[i]`</td><td>restituisce l'*i*-esimo elemento di `a`</td></tr>
-<tr><td>`a[i:j]`</td><td>restituisce gli elementi da *i* fino a *j* − 1</td></tr>
-<tr><td>`len(a)`</td><td>restituisce il numero di elementi nella sequenza</td></tr>
-<tr><td>`min(a)`</td><td>restituisce il valore più piccolo della sequenza</td></tr>
-<tr><td>`max(a)`</td><td>restituisce il valore più grande nella sequenza</td></tr>
-<tr><td>`x in a`</td><td>restituisce `True` se `x` è un elemento di `a`</td></tr>
-<tr><td>`a + b`</td><td>concatena `a` e `b`</td></tr>
-<tr><td>`n * a`</td><td>crea `n` copie della sequenza `a`</td></tr>
+<tr><td>a[i]</td><td>restituisce l'*i*-esimo elemento di `a`</td></tr>
+<tr><td> </td><td>il primo elemento ha indice 0 </td></tr>  
+<tr><td>a[i:j]</td><td>restituisce gli elementi da *i* fino a *j* − 1</td></tr>
+<tr><td>len(a)</td><td>restituisce il numero di elementi nella sequenza</td></tr>
+<tr><td>min(a)</td><td>restituisce il valore più piccolo della sequenza</td></tr>
+<tr><td>max(a)</td><td>restituisce il valore più grande nella sequenza</td></tr>
+<tr><td>x in a</td><td>restituisce `True` se `x` è un elemento di `a`</td></tr>
+<tr><td>a + b</td><td>concatena `a` e `b`</td></tr>
+<tr><td>n * a</td><td>crea e concatena `n` copie della sequenza `a`</td></tr>
 </table>
 </div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
@@ -15217,6 +15232,47 @@ per avere una lista di frasi complete si potrebbe usare il punto "." come separa
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Per accedere agli elementi di una stringa:</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="s2">&quot;abc&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Non è possibile modificare gli elementi di una stringa (è immutabile):</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">3</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>Possiamo farci stampare tutte le funzioni e i metodi che si possono applicare ad una stringa con il comando:</p>
 
 </div>
@@ -15492,6 +15548,43 @@ per avere una lista di frasi complete si potrebbe usare il punto "." come separa
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Per accedere agli elementi di una lista:</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">,</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="s1">&#39;e&#39;</span><span class="p">,</span><span class="s1">&#39;f&#39;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">4</span><span class="p">])</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;f&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>Si può aggiungere un oggetto al fondo di una lista con il metodo <code>append()</code>:</p>
 
 </div>
@@ -15558,7 +15651,7 @@ per avere una lista di frasi complete si potrebbe usare il punto "." come separa
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Per cercare informazioni sulle operazioni che si possono applicare a una stringa:</p>
+<p>Come al solito, per cercare informazioni sulle operazioni che si possono applicare a una stringa:</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
@@ -16029,7 +16122,7 @@ Notate che il valore corrispondente a <code>start</code> è il primo elemento pr
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Operazioni possibili sulle liste</p>
+<p>Anche in questo caso, informazioni ulteriori si possono trovare con:</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
@@ -16540,7 +16633,7 @@ Notate che il valore corrispondente a <code>start</code> è il primo elemento pr
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">d</span> <span class="o">=</span> <span class="p">{}</span>
-<span class="n">d</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -16588,7 +16681,7 @@ Notate che il valore corrispondente a <code>start</code> è il primo elemento pr
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">d</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -16805,7 +16898,7 @@ Notate che il valore corrispondente a <code>start</code> è il primo elemento pr
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Un esempio un po' più complicato:</p>
+<p>Un esempio un po' più complicato, anticipando alcuni concetti della lezione <a href="04_control-flow.ipynb">04_control-flow.ipynb</a>:</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
@@ -16975,26 +17068,6 @@ Notate che il valore corrispondente a <code>start</code> è il primo elemento pr
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">vdict</span><span class="p">[</span><span class="s1">&#39;vy&#39;</span><span class="p">]</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="L'operatore-di-impacchettamento/spacchettamento-**-per-dizionari">L'operatore di impacchettamento/spacchettamento <code>**</code> per dizionari<a class="anchor-link" href="#L'operatore-di-impacchettamento/spacchettamento-**-per-dizionari">&#182;</a></h3>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">di</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">:</span><span class="mi">4</span><span class="p">}</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">di</span><span class="p">)</span>
 </pre></div>
 
      </div>
