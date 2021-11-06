@@ -14447,6 +14447,42 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Numeri-esadecimali">Numeri esadecimali<a class="anchor-link" href="#Numeri-esadecimali">&#182;</a></h3><p>Sono numeri interi in base 16. Le cifre sono 1, 2, 3, 4, 5, 6, 7, 8, 9, a, b, c, d, e, f.</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mh">0xf</span>
+<span class="nb">int</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">b</span> <span class="o">=</span> <span class="mi">1357</span>
+<span class="nb">hex</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="Numeri-reali">Numeri reali<a class="anchor-link" href="#Numeri-reali">&#182;</a></h3><p>Una successione di cifre che contenga il punto di separazione viene interpretato come un numero reale.
 <strong>I numeri reali sono rappresentati in modo approssimato (10-14 cifre di precisioe).</strong></p>
 
@@ -15651,7 +15687,7 @@ per avere una lista di frasi complete si potrebbe usare il punto "." come separa
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Come al solito, per cercare informazioni sulle operazioni che si possono applicare a una stringa:</p>
+<p>Come al solito, per cercare informazioni sulle operazioni che si possono applicare a una lista:</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
@@ -15668,13 +15704,82 @@ per avere una lista di frasi complete si potrebbe usare il punto "." come separa
 </div>
 </div>
 
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Ad una lista posso applicare il metodo <code>pop</code>, che non ho menzionato.</p>
+
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">help</span><span class="p">(</span><span class="nb">list</span><span class="o">.</span><span class="n">pop</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">help</span><span class="p">(</span><span class="nb">list</span><span class="o">.</span><span class="n">pop</span><span class="p">)</span>   
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h4 id="Come-ordinare-una-lista">Come ordinare una lista<a class="anchor-link" href="#Come-ordinare-una-lista">&#182;</a></h4><p>Posso usare il metodo <code>sort</code> oppure la funzione <code>sorted</code>:</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">l</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span>
+<span class="nb">dir</span><span class="p">(</span><span class="n">l</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Il metodo <code>sort</code> modifica la lista su cui opera e NON restituisce una lista risultato.</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">l</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">l</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>La funzione <code>sorted</code> non modifica la lista su cui viene fatta agire e restituisce una nuova lista</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">l1</span><span class="o">=</span><span class="nb">sorted</span><span class="p">(</span><span class="n">l</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">l1</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -16898,35 +17003,6 @@ Notate che il valore corrispondente a <code>start</code> è il primo elemento pr
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Un esempio un po' più complicato, anticipando alcuni concetti della lezione <a href="04_control-flow.ipynb">04_control-flow.ipynb</a>:</p>
-
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">order</span> <span class="o">=</span> <span class="p">{}</span>        <span class="c1"># create an empty dictionary</span>
-
-<span class="c1">#add orders as they come in</span>
-<span class="n">order</span><span class="p">[</span><span class="s1">&#39;Peter&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;Pint of bitter&#39;</span>
-<span class="n">order</span><span class="p">[</span><span class="s1">&#39;Paul&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;Half pint of Hoegarden&#39;</span>
-<span class="n">order</span><span class="p">[</span><span class="s1">&#39;Mary&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;Gin Tonic&#39;</span>
-
-<span class="c1">#deliver order at bar</span>
-<span class="k">for</span> <span class="n">person</span> <span class="ow">in</span> <span class="n">order</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">person</span><span class="p">,</span> <span class="s2">&quot;requests&quot;</span><span class="p">,</span> <span class="n">order</span><span class="p">[</span><span class="n">person</span><span class="p">])</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>Ulteriori dettagli:</p>
 <ul>
 <li><p>La keyword può essere qualsiasi (immutable) oggetto in Python. Questo include:</p>
@@ -16942,63 +17018,6 @@ Notate che il valore corrispondente a <code>start</code> è il primo elemento pr
 <li><p>i dizionari restituiscono i valori molto velocemente quando viene loro fornita la key.</p>
 </li>
 </ul>
-<p>Un altro esempio per dimostrare il possibile vantaggio nell'uso di un dizionario piuttosto che una coppia di liste:</p>
-
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dic</span> <span class="o">=</span> <span class="p">{}</span>                        <span class="c1">#create empty dictionary</span>
-
-<span class="n">dic</span><span class="p">[</span><span class="s2">&quot;Hans&quot;</span><span class="p">]</span>   <span class="o">=</span> <span class="s2">&quot;room 1033&quot;</span>     <span class="c1">#fill dictionary</span>
-<span class="n">dic</span><span class="p">[</span><span class="s2">&quot;Andy C&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;room 1031&quot;</span>     <span class="c1">#&quot;Andy C&quot; is key</span>
-<span class="n">dic</span><span class="p">[</span><span class="s2">&quot;Ken&quot;</span><span class="p">]</span>    <span class="o">=</span> <span class="s2">&quot;room 1027&quot;</span>     <span class="c1">#&quot;room 1027&quot; is value</span>
-
-<span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">dic</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="s2">&quot;works in&quot;</span><span class="p">,</span> <span class="n">dic</span><span class="p">[</span><span class="n">key</span><span class="p">])</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Senza usare un dizionario:</p>
-
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">people</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Hans&quot;</span><span class="p">,</span><span class="s2">&quot;Andy C&quot;</span><span class="p">,</span><span class="s2">&quot;Ken&quot;</span><span class="p">]</span>
-<span class="n">rooms</span>  <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;room 1033&quot;</span><span class="p">,</span><span class="s2">&quot;room 1031&quot;</span><span class="p">,</span><span class="s2">&quot;room 1027&quot;</span><span class="p">]</span>
-
-<span class="c1">#possible inconsistency here since we have two lists</span>
-<span class="k">if</span> <span class="ow">not</span> <span class="nb">len</span><span class="p">(</span> <span class="n">people</span> <span class="p">)</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span> <span class="n">rooms</span> <span class="p">):</span>
-    <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s2">&quot;people and rooms differ in length&quot;</span><span class="p">)</span>
-
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span> <span class="nb">len</span><span class="p">(</span> <span class="n">rooms</span> <span class="p">)</span> <span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">people</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="s2">&quot;works in&quot;</span><span class="p">,</span><span class="n">rooms</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h4 id="Esempio-fisico">Esempio fisico<a class="anchor-link" href="#Esempio-fisico">&#182;</a></h4><p>Vettore 3-D: v: vx = 1.2, vy = -0.3, vz = 3.5</p>
-<p>Rappresentazione con una lista:</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
