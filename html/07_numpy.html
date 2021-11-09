@@ -14259,7 +14259,27 @@ a.anchor-link {
 
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Numerical-Python-(numpy):-arrays">Numerical Python (numpy): arrays<a class="anchor-link" href="#Numerical-Python-(numpy):-arrays">&#182;</a></h1><h2 id="Introduzione-a-Numpy-">Introduzione a Numpy <a class="anchor-link" href="#Introduzione-a-Numpy-">&#182;</a></h2><p>La librery NumPy (NUMerical PYthon) fornisce</p>
+<h1 id="Numerical-Python-(numpy)">Numerical Python (numpy)<a class="anchor-link" href="#Numerical-Python-(numpy)">&#182;</a></h1><h2 id="Introduzione">Introduzione<a class="anchor-link" href="#Introduzione">&#182;</a></h2><p>Il linguaggio Python di base (incluse le librerie standard) fornisce strumenti sufficienti per completare semplici progetti computazionali. Tuttavia, esistono librerie Python dedicate (scritte da soggetti diversi) che forniscono funzionalità estese che</p>
+<ul>
+<li><p>forniscono strumenti numerici per automatizzare operazioni ricorrenti</p>
+</li>
+<li><p>sono semplici da usare</p>
+</li>
+<li><p>sono più efficienti in termini di tempo di CPU e di esigenze di memoria degli strumenti in Python base.</p>
+</li>
+</ul>
+<p>Citiamo tre librerie in particolare:</p>
+<ul>
+<li><p>Il modulo <code>numpy</code> introdotto in 07_numpy.</p>
+</li>
+<li><p>Il modulo <code>matplotlib</code> introdotto in 08_plots.</p>
+</li>
+<li><p>Il modulo <code>scipy</code> (SCIentific PYthon) che fornisce un gran numero di algoritmi numerici introdotto in 10_scipy.</p>
+</li>
+</ul>
+<p>Molti degli algoritmi numerici resi disponibili da<code>numpy</code> e <code>scipy</code>  sono forniti da da librerie compilate, di solida tradizione, che spesso sono scritte in Fortran o C. Vengono quindi eseguite molto più velocemente di codice scritto in puro Python (che è interpretato). Generalmente, un codice compilato è due ordini di grandezza più veloce di un codice in puro Python.</p>
+<p>Come al solito, si può utilizzare la funzione <code>help</code> su ciascuno dei metodi numerici per accedere alla documentazione.</p>
+<h2 id="Numpy-">Numpy <a class="anchor-link" href="#Numpy-">&#182;</a></h2><p>La librery NumPy (NUMerical PYthon) fornisce</p>
 <ul>
 <li><p>un nuovo tipo di struttura dei dati chiamata <code>array</code>s che permette</p>
 </li>
